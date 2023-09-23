@@ -60,8 +60,16 @@ class Paint():
         self.lastY = event.y
 
     def on_drag(self, event):
-        # Actually draw a line
-        self.canvas.create_line(self.lastX, self.lastY, event.x, event.y, fill = self.paint_colour, width = 3)
+        # If the drawn line would be over the colour selection areas:
+        if (event.x <= 40 and event.y <= 190) or (self.lastX <= 40 and event.y <= 190):
+            # Set new lastX and lastY values
+            self.lastX = event.x
+            self.lastY = event.y
+            # But don't draw anything
+            return
+        else:
+            # Actually draw a line
+            self.canvas.create_line(self.lastX, self.lastY, event.x, event.y, fill = self.paint_colour, width = 3)
 
         # Set new lastX and lastY values
         self.lastX = event.x

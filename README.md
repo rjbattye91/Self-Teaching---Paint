@@ -1,2 +1,2 @@
 # Self-Teaching---Paint
-This project is a basic paint program where the brush colour can be changed (and that is about it...). The boxes can be drawn over though and I wanted to see if it was possible to make this an area that cannot be drawn on? I am also looking to have extra options in such as changing brush size and shape insert so any hints and tips on this would be appreciated!
+This project is a basic paint program where adjustable brush colour. I am looking to have extra options such as changing brush size and shape insert so any hints and tips on this would be appreciated!
